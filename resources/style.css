@@ -1,0 +1,40 @@
+/*general*/
+html{
+  font-size: 16px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+/*Header*/
+header{
+  border: 1px solid blue;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  position: fixed;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+.logo{
+  border: 1px solid grey;
+  margin-left: 1rem;
+  display: inline-flex;
+}
+
+nav{
+  border: 1px solid grey;
+}
+
+
+nav ul{
+  border: 1px solid grey;
+  display: inline-flex;
+}
+
+nav li{
+  margin-right: 1rem; 
+}
