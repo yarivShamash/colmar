@@ -26,6 +26,13 @@ h2{
   line-height: 1.5;
 }
 
+h3{
+  font-size: 1.25rem;
+  color: #4D4D4D;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
 .button{
   background-color: #4D4D4D;
   height: 2rem;
@@ -117,26 +124,68 @@ nav li a{
 
 /*on-campus*/
 .on-campus{
+  display: flex;
   border: 1px solid grey;
   position: relative;
   top: 5rem;
+  padding: 2rem 0;
 }
 
-.on-campus .left{
-  border: 1px solid grey;
-  width: 60%;
-  height: 60%;
-}
+  .on-campus .left{
+    border: 1px solid grey;
+    width: 60%;
+    height: 60%;
+  }
 
-.on-campus .left img{
-  width: 100%;
-  margin: 2rem 1.5rem;
-}/*the img overflows for some reason*/
+    .on-campus .left .img-container{
+      border: 1px solid salmon;
+      display: block;
+      width: 100%;
+      margin: 0rem 1.5rem;
+      padding: 0rem; /*an attempt to fix the img overflow, did not work out*/
+    }/*the img overflows for some reason*/
 
-.on-campus .left .quote{
-  margin: 2rem 1.5rem;
-}
+      .on-campus .left .img-container img{
+        width: 100%;
+      }
 
-.on-campus .left .quote p{
-  margin: 1.5rem auto;
-}
+    .on-campus .left .quote{
+      margin: 2rem 1.5rem;
+    }
+
+      .on-campus .left .quote p{
+        margin: 1.5rem auto;
+      }
+
+  .on-campus .right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+    .on-campus .right .feature{
+      display: flex;
+      border: 0.5px solid #D3D5D5;
+      padding: 1rem;
+      background-color: white;
+      margin-bottom: 0.5px;
+    }
+
+      .on-campus .right .feature .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 65%;
+        padding: 2rem;
+      }
+
+        .on-campus .right .feature .text a{
+            color: blue;
+        }
+
+      .on-campus .right .feature img{
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        height: 35%;
+      }
