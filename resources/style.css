@@ -1,40 +1,142 @@
 /*general*/
 html{
   font-size: 16px;
+  font-family: 'Open Sans', sans-serif;;
 }
 
 .bold{
   font-weight: bold;
 }
 
+.grey{
+  background-color: #D3D5D5;
+}
+
+h1{
+  font-size: 2rem;
+  color: #4D4D4D;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+h2{
+  font-size: 1.5rem;
+  color: #4D4D4D;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.button{
+  background-color: #4D4D4D;
+  height: 2rem;
+  text-align: center;
+}
+
+.button a{
+  display: block;
+  margin: 0.5rem auto;
+  color: whitesmoke;
+}
 
 /*Header*/
+
 header{
-  border: 1px solid blue;
-  width: 100%;
+  /*border: 1px solid blue;*/
+  position: fixed;
+  width: 98.6%;/*value of 98.6% selected because 100% overflowed the screen*/
+
   display: inline-flex;
   justify-content: space-between;
-  position: fixed;
-  font-size: 2rem;
+  align-items: center;
+
+  background-color: white;
   padding: 1rem 0.5rem;
+  z-index: 1;
+
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 1.5rem;
 }
 
 .logo{
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
   margin-left: 1rem;
   display: inline-flex;
+  align-items: center;
 }
 
-nav{
-  border: 1px solid grey;
+.logo img{
+  width:auto;
+  height: 3rem;
 }
+
+/*nav{
+  border: 1px solid grey;
+}*/
 
 
 nav ul{
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
   display: inline-flex;
 }
 
 nav li{
-  margin-right: 1rem; 
+  margin-right: 1rem;
+}
+
+nav li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*banner*/
+
+.banner{
+  position: relative;
+  top: 5rem;
+
+  display: inline-flex;
+}
+
+.banner img{
+  width: 60%;
+  height: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.banner .side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25%;
+}
+
+.banner h2{
+  margin: 2rem auto;
+}
+
+/*on-campus*/
+.on-campus{
+  border: 1px solid grey;
+  position: relative;
+  top: 5rem;
+}
+
+.on-campus .left{
+  border: 1px solid grey;
+  width: 60%;
+  height: 60%;
+}
+
+.on-campus .left img{
+  width: 100%;
+  margin: 2rem 1.5rem;
+}/*the img overflows for some reason*/
+
+.on-campus .left .quote{
+  margin: 2rem 1.5rem;
+}
+
+.on-campus .left .quote p{
+  margin: 1.5rem auto;
 }
