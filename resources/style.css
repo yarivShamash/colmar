@@ -102,12 +102,16 @@ nav li a{
   position: relative;
   top: 5rem;
 
-  display: inline-flex;
+  display: flex;
+}
+
+.banner .container{
+  width: 60%;
 }
 
 .banner img{
-  width: 60%;
-  height: 60%;
+  width: 94%;
+  height: 90%;
   margin: 2rem 1.5rem;
 }
 
@@ -118,7 +122,7 @@ nav li a{
   width: 25%;
 }
 
-.banner h2{
+.banner h3{
   margin: 2rem auto;
 }
 
@@ -132,21 +136,20 @@ nav li a{
 }
 
   .on-campus .left{
-    border: 1px solid grey;
     width: 60%;
     height: 60%;
   }
 
     .on-campus .left .img-container{
-      border: 1px solid salmon;
       display: block;
       width: 100%;
       margin: 0rem 1.5rem;
-      padding: 0rem; /*an attempt to fix the img overflow, did not work out*/
-    }/*the img overflows for some reason*/
+    }
 
       .on-campus .left .img-container img{
-        width: 100%;
+        width: 94%;
+        height: 90%;
+
       }
 
     .on-campus .left .quote{
