@@ -1,7 +1,7 @@
 /*general*/
 html{
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .bold{
@@ -16,13 +16,13 @@ h1{
   font-size: 2rem;
   color: #4D4D4D;
   font-weight: 800;
-  line-height: 1.5;
+
 }
 
 h2{
   font-size: 1.5rem;
   color: #4D4D4D;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.5;
 }
 
@@ -30,6 +30,10 @@ h3{
   font-size: 1.25rem;
   color: #4D4D4D;
   font-weight: 700;
+  line-height: 1.5;
+}
+
+p{
   line-height: 1.5;
 }
 
@@ -48,7 +52,6 @@ h3{
 /*Header*/
 
 header{
-  /*border: 1px solid blue;*/
   position: fixed;
   width: 98.6%;/*value of 98.6% selected because 100% overflowed the screen*/
 
@@ -64,36 +67,29 @@ header{
   font-size: 1.5rem;
 }
 
-.logo{
-  /*border: 1px solid grey;*/
-  margin-left: 1rem;
-  display: inline-flex;
-  align-items: center;
-}
+  .logo{
+    margin-left: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
 
-.logo img{
-  width:auto;
-  height: 3rem;
-}
+    .logo img{
+      width:auto;
+      height: 3rem;
+    }
 
-/*nav{
-  border: 1px solid grey;
-}*/
+  nav ul{
+    display: inline-flex;
+  }
 
+    nav li{
+      margin-right: 1rem;
+    }
 
-nav ul{
-  /*border: 1px solid grey;*/
-  display: inline-flex;
-}
-
-nav li{
-  margin-right: 1rem;
-}
-
-nav li a{
-  text-decoration: none;
-  color: inherit;
-}
+      nav li a{
+        text-decoration: none;
+        color: inherit;
+      }
 
 
 /*banner*/
@@ -105,31 +101,30 @@ nav li a{
   display: flex;
 }
 
-.banner .container{
-  width: 60%;
-}
+    .banner .container{
+      width: 60%;
+    }
 
-.banner img{
-  width: 94%;
-  height: 90%;
-  margin: 2rem 1.5rem;
-}
+  .banner img{
+    width: 94%;
+    height: 90%;
+    margin: 2rem 1.5rem;
+  }
 
-.banner .side{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 25%;
-}
+    .banner .side{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 25%;
+    }
 
-.banner h3{
-  margin: 2rem auto;
-}
+    .banner h3{
+      margin: 2rem auto;
+    }
 
 /*on-campus*/
 .on-campus{
   display: flex;
-  border: 1px solid grey;
   position: relative;
   top: 5rem;
   padding: 2rem 0;
@@ -166,12 +161,19 @@ nav li a{
     flex-direction: column;
   }
 
+
+
     .on-campus .right .feature{
       display: flex;
       border: 0.5px solid #D3D5D5;
       padding: 1rem;
       background-color: white;
       margin-bottom: 0.5px;
+      transition: background-color 0.5s ease;
+    }
+
+    .on-campus .right .feature:hover{
+      background-color: #D3D5D5;
     }
 
       .on-campus .right .feature .text{
@@ -192,3 +194,56 @@ nav li a{
         width: 35%;
         height: 35%;
       }
+
+/*online*/
+
+.online{
+  position: relative;
+  top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4.5rem;
+}
+
+  .online h2{
+    margin: 2rem auto;
+  }
+
+  .online .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+  }
+
+    .online .container .element{
+      background-color: white;
+      width: 30%;
+
+      display: flex;
+      flex-direction: column;
+
+      margin-bottom: 2rem;
+
+    }
+
+      .online .container .element img{
+        height: auto;/*assinged auto like stated in the redline but the
+        proportions are NOT satisfying*/
+      }
+
+      .online .container .element .text{
+        padding: 1rem;
+      }
+
+        .online .container .element .text h4{
+          margin: 0.5rem auto;
+          color: grey;
+        }
+
+        .online .container .element .text p{
+          color: grey;
+        }
