@@ -247,3 +247,105 @@ header{
         .online .container .element .text p{
           color: grey;
         }
+/*thesis exhibit*/
+.thes-ex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  top: 5rem;
+  padding: 2rem 0;
+}
+
+  .thes-ex h2{
+    margin-bottom: 2rem;
+  }
+
+  .thes-ex .container{
+    display: flex;
+  }
+
+    .thes-ex .left{
+      width: 60%;
+      height: 60%;
+    }
+
+      .thes-ex .left .vid-container{
+        display: block;
+        width: 100%;
+        margin: 0rem 1.5rem;
+      }
+
+        .thes-ex .left .vid-container video{
+          width: 94%;
+          height: 90%;
+        }
+
+     .thes-ex .left .quote{
+          margin: 1.5rem 1.5rem 0 1.5rem;
+        }
+
+          .thes-ex .left .quote p{
+            margin-top: 0.5rem;
+          }
+
+    .thes-ex .right{
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+    }
+
+      .thes-ex .right .feature{
+        display: flex;
+        padding: 1rem;
+        background-color: white;
+        margin-bottom: 0.5px;
+        transition: background-color 0.5s ease;
+      }
+
+      .thes-ex .right .feature:hover{
+        background-color: #D3D5D5;
+      }
+
+        .thes-ex .right .feature .text{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 65%;
+          padding: 2rem;
+        }
+
+        .thes-ex .right .feature img{
+          display: flex;
+          flex-direction: column;
+          width: 35%;
+          height: 35%;
+        }
+
+/*footer*/
+
+footer{
+  width: 98.6%;/*value of 98.6% selected because 100% overflowed the screen*/
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  top: 5rem;
+  padding: 2rem 1rem;
+  background-color: white;
+  color: grey;
+  border-top: 1px solid #D3D5D5;
+}
+
+  footer ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+    footer a{
+      color: grey;
+      margin: 0 0.5rem;
+    }
