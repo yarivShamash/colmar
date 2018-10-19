@@ -1,3 +1,10 @@
+/*Dear reviewer,
+I hope the capstone project I built meets your satisfaction. I did encouter some
+problems that I couldn't resolve and would like to learn how can I improve.
+waiting on your replay,
+
+Yariv Shamash*/
+
 /*general*/
 html{
   font-size: 16px;
@@ -47,6 +54,7 @@ p{
   display: block;
   margin: 0.5rem auto;
   color: whitesmoke;
+  font-weight: bold;
 }
 
 /*Header*/
@@ -85,6 +93,10 @@ header{
     nav li{
       margin-right: 1rem;
     }
+
+      nav li img{
+        display: none;
+      }
 
       nav li a{
         text-decoration: none;
@@ -349,3 +361,166 @@ footer{
       color: grey;
       margin: 0 0.5rem;
     }
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 470px){
+/*Header*/
+.logo p{
+  display: none;
+}
+  nav{
+    width: 70%;
+  }
+    nav ul{
+      width: 100%;
+      justify-content: space-around;
+    }
+
+      nav li p{
+        display: none;
+      }
+
+      nav li img{
+        display: inline-block;
+      }
+
+
+/*banner*/
+.banner{
+  flex-direction: column;
+  align-items: center;
+}
+
+  .banner .container{
+    width: 100%;
+  }
+
+    .banner .container img{
+      width: 100%;
+      margin: 0;
+    }
+
+  .banner .side{
+    width: 90%;
+    margin: 2rem 1rem;
+  }
+
+    .banner .side h3{
+      margin-bottom: 1.5rem;
+    }
+
+    .banner .side .button{
+      background-color: #9e9c9c;
+    }
+
+
+/*on-campus*/
+
+  .on-campus .left{
+    display: none;
+  }
+
+  .on-campus .right{
+    width: 100%;
+    flex-direction: column;
+  }
+
+    .on-campus .right .feature{
+      flex-direction: column;
+      border: none;
+    }
+
+    .on-campus .right .feature img{
+      width: 100%;
+      height: 12rem;
+      /*height: 50%; didn't manage to adjust height properly(out of proportions)*/
+    }
+
+    .on-campus .right .feature .text{
+      padding: 1rem;
+      width: 100%;
+    }
+      .on-campus .right .feature .text p{
+        margin: 1rem 0;
+      }
+
+
+/*online*/
+.online{
+  background-color: white;
+  border-top: 1px solid #D3D5D5;
+  width: 100%;
+  padding: 0;
+}
+  .online .container{
+    flex-direction: column;
+
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+    .online .container .element{
+      background-color: #D3D5D5;
+      width: 90%;
+    }/*I didn't manage to center the elements*/
+
+      .online .container .element img{
+        display: none;
+      }
+      .online .container .element h3{
+        margin: 1rem;
+      }
+      .online .container .element h4, .online .container .element p{
+        display: none;
+      }
+
+
+/*thesis exhibit*/
+
+.thes-ex {
+  border-top: 1px solid #D3D5D5;
+}
+
+  .thes-ex h2{
+    margin-bottom: 1rem;
+  }
+
+  .thes-ex .left{
+    width: 100%;
+  }
+
+    .left .quote{
+      display: none;
+    }
+
+    .thes-ex .left .vid-container{
+      margin: 0;
+    }
+
+      .thes-ex .left .vid-container video{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+  .thes-ex .right{
+    display: none;
+  }
+
+
+/*footer*/
+footer{
+  border: none;
+}
+
+  footer .copyrights{
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  footer ul{
+    display: none;
+  }
+}
